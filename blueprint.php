@@ -37,5 +37,6 @@ ds_cli_exec( "wp rewrite flush --quiet" );
 if ( is_file( "index.php" ) ) {
 
 	/** Cleanup the empty folder, download, and this script. */
-	ds_cli_exec( "rm blueprint.php" );	
+	ds_cli_exec( "rm blueprint.php" );
+	ds_cli_exec( "rm index.htm" );
 }
